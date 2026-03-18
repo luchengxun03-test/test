@@ -2,6 +2,7 @@ TechFusion Studio - 官方形象網站
 這是一個模擬技術工作室打造的現代化響應式形象網站，展示了前端切版技術、動態互動邏輯以及團隊呈現。
 
 🛠️ 技術棧 (Tech Stack)
+
 前端開發: HTML5, CSS3 (BEM 命名規範).
 
 動態互動: JavaScript / jQuery 3.6.4.
