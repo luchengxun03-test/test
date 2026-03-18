@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們 | TechFusion Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .contact-container {
+            max-width: 600px; /* 限制寬度，讓單欄表單更好看 */
+            margin: 150px auto 100px;
+            padding: 40px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .form-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+        .form-input:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header js-header header--scrolled">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">TechFusion</a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="index.html" class="header__link">首頁</a></li>
+                    <li class="header__item"><a href="team.html" class="header__link">技術團隊</a></li>
+                    <li class="header__item"><a href="contact.html" class="header__link active">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contact-container">
+        <h2 class="form-title">即刻聯繫我們</h2>
+        <form id="simpleContact">
+            <div class="form-group">
+                <label>您的姓名</label>
+                <input type="text" class="form-input" placeholder="請輸入姓名" required>
+            </div>
+            <div class="form-group">
+                <label>電子郵件</label>
+                <input type="email" class="form-input" placeholder="example@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label>諮詢內容</label>
+                <textarea class="form-input" rows="5" placeholder="請輸入您的需求..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width: 100%;">確認送出</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2026 TechFusion Studio.</p></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#simpleContact').on('submit', function(e) {
+                e.preventDefault();
+                alert('感謝您的來信！我們會盡快回覆您。');
+                window.location.href = "index.html"; // 送出後自動跳回首頁
+            });
+        });
+    </script>
+</body>
+</html>
