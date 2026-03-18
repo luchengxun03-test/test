@@ -9,11 +9,11 @@ TechFusion Studio - 官方形象網站
 
 視覺樣式:
 
-Google Fonts: Noto Sans TC (提供專業的繁體中文顯示).
+-Google Fonts: Noto Sans TC (提供專業的繁體中文顯示).
 
-Font Awesome: 向量圖示增強視覺導航.
+-Font Awesome: 向量圖示增強視覺導航.
 
-自適應設計 (RWD): 支援桌機、平板與手機端瀏覽體驗.
+-自適應設計 (RWD): 支援桌機、平板與手機端瀏覽體驗.
 
 ✨ 核心功能與亮點
 1. 智慧導覽列 (Sticky Header)
